@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+	<html ng-app="twitterApp">
+	<head>
+	  <!-- SCROLLS -->
+	  <!-- load bootstrap and fontawesome via CDN -->
+	  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+	  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" />  
+	  <link rel="stylesheet" href="static/css/ng-grid.css">
+	  <link rel="stylesheet" type="text/css" href="static/css/ng-grid.css" />
+	  <!--<link rel="stylesheet" type="text/css" href="http://angular-ui.github.com/ng-grid/css/ng-grid.css" />-->
+	  
+	</head>
+	<body>
+
+		<!-- HEADER AND NAVBAR -->
+		<header>
+			<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Twitter Clone</a>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+					<li><a href="#profile"><i class="fa fa-shield"></i> Profile</a></li>
+					<li><a href="#tweetpost"><i class="fa fa-comment"></i> New Post</a></li>
+					<li><a href="#database"><i class="fa fa-comment"></i> Database</a></li>
+				</ul>
+			</div>
+			</nav>
+		</header>
+
+		<!-- MAIN CONTENT AND INJECTED VIEWS -->
+		<div id="main">
+			
+			
+			<div ng-view></div>
+			
+		
+
+		</div>
+
+		<!-- FOOTER -->
+		<footer class="text-center">
+			Developed by <a href="http://in.linkedin.com/pub/sebin-tony/32/12/446">Sebin Tony</a>
+		</footer>
+		
+		  <!-- load angular via CDN -->
+		  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.js"></script>
+		  <script src="http://code.angularjs.org/1.2.10/angular-route.js"></script>
+		  <script src="static/js/bin/ng-grid-2.0.13.min.js"></script>
+		  <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+		  <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.9.0.js"></script>
+		  <!-- Custom js files -->
+		  <script src="static/js/app.js"></script>
+		  <script src="static/js/controller.js"></script>
+		  <script src="static/js/services.js"></script>
+
+	</body>
+	</html>

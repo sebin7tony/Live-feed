@@ -1,0 +1,31 @@
+<style type="text/css">
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 400px; 
+    height: 300px;
+}
+</style>
+
+
+
+<ul class="nav navbar-nav" style="margin-left : 70px">
+	<li style="padding:10px;font-size: 17px;"><a ng-click="getPosts()"><i class="fa fa-database"></i> Posts</a></li>
+	<li class="active"style="padding:10px;font-size: 17px;"><a><i class="fa fa-database"></i> Comments</a></li>
+	<li style="padding:10px;font-size: 17px;"><a ><i class="fa fa-database"></i> Users</a></li>
+</ul>
+
+<div style="padding : 80px;">
+	<table class="table table-condensed">
+        <thead>
+            <tr>
+                <th ng-repeat="head in postDataHeaders.header">{{head}}</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr ng-repeat="post in postData" >
+                <td ng-repeat="head in postDataHeaders.header">{{post[head]}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="gridStyle" ng-grid="gridOptions"></div>

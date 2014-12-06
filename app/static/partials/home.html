@@ -1,0 +1,23 @@
+
+
+<img ng-src="{{srcd}}" style="height:30px;width:30px" ng-click ="imgChange()">
+
+<div class="list-group" style="margin-left: 20%; margin-right: 40%; margin-top: 5%">
+	<a href="#" class="list-group-item" ng-repeat="tweet in dataset" style="padding: 1px;" >
+		<table width="100%" style="height: 1px;" cellpadding="10" cellspacing="0" border="0">
+			<tr>
+				<td width="25%" valign="top">
+				    <img alt="prof pic" ng-src={{tweet.image}} class="thumbnail" ng-click="showModal(tweet)">
+					<p style="text-align: center; margin-bottom: 0px;">{{tweet.author}}</p>
+				</td>
+				<td>
+					<p>{{tweet.quote}}</p>
+					
+				</td>
+			</tr>
+
+		</table>
+	</a>
+</div>
+<!-- <input type="button" value="click" ng-click="showModal(tweet)"/>
+ -->

@@ -1,0 +1,14 @@
+<div class="modal-header">
+  <h1>{{data.author}}</h1>
+  <img alt="prof pic" ng-src={{data.image}} class="thumbnail">
+
+
+</div>
+<div class="modal-body">
+ 	<p>{{data.quote}}</p>
+ 	
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>
